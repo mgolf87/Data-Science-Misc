@@ -1,5 +1,5 @@
 # Data-Science-Misc
-
+Collection of various Data Science topics and techniques.
 <br />
 
 ## Quantile Regression
