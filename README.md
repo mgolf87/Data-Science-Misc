@@ -13,7 +13,7 @@ L = (y - Xθ)^2
 <br />
 <br />
 Quantile Loss Function: <br />
-L = τ(y - Xθ) if y - Xθ >= 0 : predicted value low, used for low quantiles, penalizes high
+L = τ(y - Xθ)   if y - Xθ >= 0 : predicted value low, used for low quantiles, penalizes high
 <br />
 L = (τ - 1)(y - Xθ)  if y - Xθ < 0  : predicted value high, used for high quantiles, penalizes low
 <br />
