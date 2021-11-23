@@ -20,8 +20,7 @@ L = (τ - 1)(y - Xθ) if y - Xθ < 0  : predicted value high, used for high quan
 <br />
 Penalize the Loss when: 
 <br />
-The percentile τ is low, but the prediction is Xθ is high 
-<br />    
+The percentile τ is low, but the prediction is Xθ is high  
 The percentile τ is high, but the prediction is Xθ is low
 <br />
 <br />
