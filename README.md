@@ -10,9 +10,11 @@ Quantile Regression is used to generate bounds (i.e. DoorDash: "Your order will 
 Regression Loss Function: <br />
 L = (y - Xθ)^2
 <br />
-Quantile Loss Function: L = τ(y - Xθ)        if y - Xθ >= 0 : predicted value low, used for low quantiles, penalizes high
 <br />
-                            (τ - 1)(y - Xθ)  if y - Xθ < 0  : predicted value high, used for high quantiles, penalizes low
+Quantile Loss Function: <br />
+L = τ(y - Xθ) if y - Xθ >= 0 : predicted value low, used for low quantiles, penalizes high
+<br />
+L = (τ - 1)(y - Xθ)  if y - Xθ < 0  : predicted value high, used for high quantiles, penalizes low
 <br />
 <br />
 Penalize the Loss when: 
