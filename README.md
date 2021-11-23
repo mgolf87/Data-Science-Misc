@@ -15,8 +15,7 @@ Quantile Loss Function: L = τ(y - Xθ)        if y - Xθ >= 0 : predicted value
 <br />
 Penalize the Loss when: 
 <br />
-    The percentile τ is low, but the prediction is Xθ is high
-<br />    
+    The percentile τ is low, but the prediction is Xθ is high 
     The percentile τ is high, but the prediction is Xθ is low
 <br />
 For this example we will be using τ = [0.2, 0.5, 0.9] however we will only consider the 20th and 90th quantile as we want our time prediction to have a minimum at 20% and a maximum at 90% ensuring that we don't get the hopes up of the customers too much like a 10% minimum might. As well, we don't want our maximum to be higher than 90% as this may skew our range to appear greater than what is likely.
