@@ -30,7 +30,7 @@ For this example we will be using τ = [0.2, 0.5, 0.9] however we will only cons
 
 ## Centered Moving Average (CMA)
 ### Forecasting, Seasonality
-### Files
+### CMA Forecast MGolf.xlsx
 Moving Averages are used to analyze data through generating series of the averaged data where each series is constrained by a given period. For biological and some financial data these time periods may tend towards seconds or milliseconds, however larger time periods like quarters or years are frequently used for analyzing and forecasting financial data. When the period analyzed is even the moving average falls on a fractional number, this doesn't make sense when analyzing months as we want to know the values for the 7th month not the 7.5th month. Therefore, we must center the data by averaging two consecutive periods, thus producing an integer value.
 <br />
 <br />
