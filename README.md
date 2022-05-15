@@ -34,7 +34,7 @@ For this example we will be using τ = [0.2, 0.5, 0.9] however we will only cons
 Moving Averages are used to analyze data through generating series of the averaged data where each series is constrained by a given period. For biological and some financial data these time periods may tend towards seconds or milliseconds, however larger time periods like quarters or years are frequently used for analyzing and forecasting financial data. When the period analyzed is even the moving average falls on a fractional number, this doesn't make sense when analyzing months as we want to know the values for the 7th month not the 7.5th month. Therefore, we must center the data by averaging two consecutive periods, thus producing an integer value.
 <br />
 <br />
-**Net Revenue* Forecasting using CMA:**
+**Net Revenue Forecasting using CMA:**
 <br />
 **(1)** Using CMA we find the deseasonalized net revenue for each month
 <br />
@@ -44,7 +44,7 @@ Moving Averages are used to analyze data through generating series of the averag
 <br />
 **(4)** Modify the estimate by incorporating seasonality into the forecast
 <br />
-Any metric which can be evaluated over periods can be analyzed using CMA*
+*Any metric which can be evaluated over periods can be analyzed using CMA*
 <br />
 <br />
 Graphs are generated which compare the net revenue, cost of goods and services (COGS), and the year over year (YOY) growth of the net revenue for the 2019, 2020, and 2021 time periods. As well, the whole 2021 year was forecasted using CMA for both the net revenue and YOY growth metrics. The forecasted seasonal trend of the net revenue is also represented in a graph and clearly displays a seasonality in the data. Actual net revenue is compared to the CMA forecast, where accuracy is evaluated by measuring the percent error. A high accuracy is indicated by a percent error lower than 5%, a moderate accuracy is between 5 and 10%, and a low accuracy is anything greater than 10%. Net revenue is compared for all years (2019, 2020, 2021) using the forecasted (2021) data, and the YOY Growth of the net revenue in 2020 is compared to the forecasted values for 2021.
