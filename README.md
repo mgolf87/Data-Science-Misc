@@ -8,17 +8,17 @@ Collection of various Data Science topics and techniques.
 Quantile Regression is used to generate bounds (i.e. DoorDash: "Your order will arive in 25 to 35 minutes")
 <br />
 <br />
-Regression Loss Function: <br />
+**Regression Loss Function:** <br />
 L = (y - Xθ)^2
 <br />
 <br />
-Quantile Loss Function: <br />
+**Quantile Loss Function:** <br />
 L = τ(y - Xθ) if y - Xθ >= 0 : predicted value low, used for low quantiles, penalizes high
 <br />
 L = (τ - 1)(y - Xθ) if y - Xθ < 0  : predicted value high, used for high quantiles, penalizes low
 <br />
 <br />
-Penalize the Loss when: 
+**Penalize the Loss when:** 
 <br />
 The percentile τ is low, but the prediction is Xθ is high  
 The percentile τ is high, but the prediction is Xθ is low
@@ -34,15 +34,15 @@ For this example we will be using τ = [0.2, 0.5, 0.9] however we will only cons
 Moving Averages are used to analyze data through generating series of the averaged data where each series is constrained by a given period. For biological and some financial data these time periods may tend towards seconds or milliseconds, however larger time periods like quarters or years are frequently used for analyzing and forecasting financial data. When the period analyzed is even the moving average falls on a fractional number, this doesn't make sense when analyzing months as we want to know the values for the 7th month not the 7.5th month. Therefore, we must center the data by averaging two consecutive periods, thus producing an integer value.
 <br />
 <br />
-Net Revenue* Forecasting using CMA:
+**Net Revenue* Forecasting using CMA:**
 <br />
-(1) Using CMA we find the deseasonalized net revenue for each month
+**(1)** Using CMA we find the deseasonalized net revenue for each month
 <br />
-(2) Generate a trend line for the deseasonalized data
+**(2)** Generate a trend line for the deseasonalized data
 <br />
-(3) Find the seasonal index for each month and estimate future net revenue
+**(3)** Find the seasonal index for each month and estimate future net revenue
 <br />
-(4) Modify the estimate by incorporating seasonality into the forecast
+**(4)** Modify the estimate by incorporating seasonality into the forecast
 <br />
 Any metric which can be evaluated over periods can be analyzed using CMA*
 <br />
